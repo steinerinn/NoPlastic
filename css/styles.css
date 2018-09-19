@@ -1,1 +1,121 @@
+/* ================================= 
+  Base Styles
+==================================== */
 
+/* Typical body elements */
+* {
+    box-sizing: border-box;
+    /* Undirlína ofl teknir af links */
+    text-decoration: none;
+}
+
+/* Í body fer allt sem á við um alla síðuna */
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-container {
+    /* Setur container max width út frá body (1280px) */
+    width: 100%;
+}
+
+/* Dropshadow undir navbar */
+header {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 60%, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); /* Fade out pælingin í navbar */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 90px;
+    position: fixed; /* Set navbar í fixed position */
+    top: 0; /* Staðsett á toppnum */
+    width: 100%; /* Full width, annars fellur flexið saman*/
+    max-width: 1440px;  /* Verður að hafa þetta, annars stækkar umfram 1440px */
+}
+
+/* Stillingar á navbar í header */
+.cart-ico {
+    margin: 0 53px 0 22px;
+}
+ /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
+.logo {
+    margin: 0 100px 0 -100px;
+}
+
+/* Bil á milli hnappa í navbar */
+.nav-buttons {
+    margin-left: 41px
+}
+
+.front-page {
+    background-image: url(../img/raw_main_image.jpg);
+    background-repeat: no-repeat;
+    height: 850px;
+    margin-top: 90px;
+}
+
+/* Heading í mynd */
+h1 {
+    margin-left: 855px;
+    padding-top: 405px;
+    font-size: 75px;
+}
+
+/* Heading texti neðar í síðunni */
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Fyrir miðjujafnað h2 */
+h2.h2-centered {
+    text-align: center;
+    padding: 50px 0 50px;
+}
+
+/* Kaupbox skilgreint */
+.buy {
+    width: 300px;
+    height: 65px;
+    background-color: #d1aeac;
+    border-radius: 25px;
+    font-size: 2em;
+    color: white;
+    margin: 0 5px;
+}
+ /* Svo vörurnar klessist ekki saman */
+.vara {
+    padding-top: 20px;
+}
+
+.info {
+    width: 43%;
+}
+
+/* Bilið á milli vara og infoglugga */ 
+.other-content {
+    padding-top: 50px;
+}
+
+/* myndir í info gluggum */
+.first {
+    background-image: url(../img/plastics.jpg);
+    background-repeat: no-repeat;
+}
+
+.fourth {
+    background-image: url(../img/cardboard-text.jpg);
+    background-repeat: no-repeat;
+}
+
+/* paragraph textinn í info gluggum */
+p.info-text {
+    font-size: 30px;
+}
+
+/* Er í einhverju veseni með að koma iconunum í vertical align middle */
+.main-footer {
+    height: 70px;
+    background-color: #767878;
+    margin-top: 90px;
+    max-width:100%;
+    vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
+}

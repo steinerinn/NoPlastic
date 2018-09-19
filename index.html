@@ -10,17 +10,90 @@
     </head>
     
     <body>
+        <!-- main-container heldur utan um allt og passar að það sé ekki meira en 1440px. -->
+        <div class="main-container">
+            <!-- Flex utan um flex-nav  -->
+            <header id="main-header">
+                <!-- Flex child af navbar til vinstri -->
+                <div class="flex-nav-left">
+                    <nav class="nav-left">
+                        <ul class="navbar">
+                            <li class="nav-buttons"><a href="index.html">Products</a>
+                            </li>
+                            <li class="nav-buttons"><a href="index.html">Blogs</a>
+                            </li>
+                            <li class="nav-buttons"><a href="index.html">About</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex-nav-center">
+                    <a href="index.html"><img class="logo" src="img/raw_logo.GIF"></a>
+                </div>
+                <!-- Flex child af navbar til hægri -->
+                <div class="flex-nav-right">
+                    <a href="index.html"><img class="login-ico" src="img/raw_login.GIF"></a>
+                    <a href="index.html"><img class="cart-ico" src="img/raw_cart.GIF"></a>
+                </div>
+            </header>
+             
+            <div class="front-page">
+                <h1>
+                    Join the fight
+                </h1>
+            </div>
 
-        <header class="navbar">
-            
-        </header>
+            <h2 class="h2-centered">
+                OUR BESTSELLERS
+            </h2>
+            <div class="voru-content">
+                <div class="vara">
+                    <img id="mynd_1" class="mynd" src="img/m1.jpg">
+                    <p class="buy"><a href="index.html">Shop - $30</a></p>
+                </div>
+    
+                <div class="vara">
+                    <img id="mynd_2" class="mynd" src="img/m2.jpg">
+                    <p class="buy"><a href="index.html">Shop - $30</a></p>
+                </div>
+    
+                <div class="vara">
+                    <img id="mynd_3" class="mynd" src="img/m3.jpg">
+                    <p class="buy"><a href="index.html">Shop - $30</a></p>
+                </div>
+            </div>
+
+            <div class="other-content">
+                    <div class="info first">
+                    </div>
         
+                    <div class="info second">
+                        <h2>
+                            SAVE THE WORLD
+                        </h2>
+                        <p class="info-text">
+                            "Be the cange that you wish to see in the world"
+                        </p>
+                        <p class="buy"><a href="index.html">READ MORE</a></p>
+                    </div>
 
+                    <div class="info third">
+                        <h2>
+                            SAVE THE WORLD
+                        </h2>
+                        <p class="info-text">
+                            "Be the cange that you wish to see in the world"
+                        </p>
+                        <p class="buy"><a href="index.html">READ MORE</a></p>
+                    </div>
 
-        <footer class="main_footer">
+                    <div class="info fourth">
+                    </div>
+                </div>
 
-
-        </footer>
-
+            <footer class="main-footer">
+                    <img class="footer-mynd" src="img/raw_footericons.jpg">
+            </footer>
+        </div>
     </body>
 </html>
