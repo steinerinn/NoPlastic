@@ -70,14 +70,38 @@ li a:hover {
     font-size: 75px;
 } */
 
-/* Fyrir miðjujafnað h2 */
-h2.h2-centered {
-    text-align: center;
+/* Almennt fyrir h2 */
+h2.h2-centered,
+h2.h2-normal {
     font-style: normal;
     font-weight: 300;
     line-height: 94px;
-    padding: 63px 0 59px;
     font-size: 50px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+h2.h2-centered {
+    text-align: center;
+    padding: 63px 0 59px;
+}
+
+h2.h2-normal {
+    padding: 0 0 59px;
+}
+
+.second {
+    padding-left: 120px;
+}
+
+/* Texti á forsíðu */
+.info-text {
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px;
+    font-size: 24px;
+    max-width: 350px;
+    margin: -20px 0 90px;
     color: #000000;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
@@ -90,7 +114,7 @@ h2.h2-centered {
     color: #fff;
     padding: 15px 25px;
     background-color: #DDBFBD;
-    border: 1px solid #DDBFBD;
+    border: 3px solid #DDBFBD;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 24px;
@@ -98,20 +122,23 @@ h2.h2-centered {
 .btn-holder .btn:hover{
     background-color: white;
     color: #DDBFBD;
+    box-shadow: none;
 }
 /*Grænu takkarnir stórir */
 
 .btn-holder-green .btn-green{
     color: #fff;
     padding: 15px 25px;
-    background-color: #DDBFBD;
-    border: 1px solid #DDBFBD;
+    background-color: #5D9699;
+    border: 3px solid #5D9699;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 24px;
 }
 .btn-holder-green .btn-green:hover{
     background-color: white;
-    color: #DDBFBD;
+    color: #5D9699;
+    box-shadow: none;
 }
 
  /* Svo vörurnar klessist ekki saman */
@@ -129,7 +156,7 @@ h2.h2-centered {
 }
 
 /* myndir í info gluggum */
-.first {
+.fyrst {
     background-image: url(../img/plastics.jpg);
     background-repeat: no-repeat;
 }
