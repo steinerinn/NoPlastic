@@ -1,8 +1,12 @@
 .main-container{
 	padding-top: 300px;
 }
-
+.small-images{
+	display: flex;
+	flex-flow: column;
+}
 .small-img{
 	height: 100px;
+	width: 100px;
 	border: 1px solid black;
 }

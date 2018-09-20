@@ -95,6 +95,23 @@ h2.h2-centered {
 .buy a {
     color: white;
 }
+/* Nikki takka stuff */
+.btn-holder{
+    margin:0 auto;
+}
+.btn-holder .btn{
+    color: #fff;
+    padding: 15px 25px;
+    background-color: #DDBFBD;
+     border: 1px solid #DDBFBD;
+    border-radius: 25px;
+    font-size: 24px;
+}
+.btn-holder .btn:hover{
+    background-color: white;
+     color: #DDBFBD;
+}
+
 
 /* Stór kauphnappur hover */
 .buy:hover {
