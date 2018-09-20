@@ -79,7 +79,7 @@ h2.h2-centered {
     border-radius: 25px;
     font-size: 2em;
     color: white;
-    margin: 0 5px;
+    margin: 0 30px;
 }
  /* Svo vörurnar klessist ekki saman */
 .vara {
@@ -116,6 +116,27 @@ p.info-text {
     height: 70px;
     background-color: #767878;
     margin-top: 90px;
-    max-width:100%;
+    width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-mynd {
+    height: 30px;
+}
+
+/* Miðjujafna texta við hliðiná stórum myndum */
+.vara-texti {
+    align-items: center;
+}
+
+/* kemur í veg fyrir að myndit "strekkist" */
+.mynd {
+    align-self: center
 }
