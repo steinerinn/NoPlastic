@@ -28,12 +28,24 @@ header {
 li a {
     font-size: 20px;
     text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 20px;
+    text-align: center;
+    /* textcolor noplastic */
     color: #363636;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 li a:hover {
     text-decoration: underline;
     color: #ddbfbd;
+}
+
+/* Bil á milli hnappa í navbar */
+.nav-buttons {
+    margin-left: 41px
 }
 
 /* Stillingar á navbar í header */
@@ -50,25 +62,25 @@ li a:hover {
     height: 65px;
 }
 
-/* Bil á milli hnappa í navbar */
-.nav-buttons {
-    margin-left: 41px
-}
-
 .front-page {
     background-image: url(../img/main-banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
-
 }
 
-/* Heading í mynd */
-/* h1 { 
+/* Heading texti í mynd */
+ h1.front-title-text{
     margin-left: 855px;
     padding-top: 405px;
-    font-size: 75px;
-} */
+    font-style: normal;
+    font-weight: normal;
+    line-height: 120px;
+    font-size: 64px;
+    text-align: center;
+    color: #787878;
+}
 
 /* Almennt fyrir h2 */
 h2.h2-centered,
@@ -112,7 +124,7 @@ h2.h2-normal {
 }
 .btn-holder .btn{
     color: #fff;
-    padding: 15px 25px;
+    padding: 10px 25px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -128,7 +140,7 @@ h2.h2-normal {
 
 .btn-holder-green .btn-green{
     color: #fff;
-    padding: 15px 25px;
+    padding: 10px 35px;
     background-color: #5D9699;
     border: 3px solid #5D9699;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -141,9 +153,34 @@ h2.h2-normal {
     box-shadow: none;
 }
 
- /* Svo vörurnar klessist ekki saman */
+ /* Stillingar á vöruglugga */
 .vara {
-    padding-top: 20px;
+    padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
+    border: 3px solid #DDBFBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.vara:hover {
+    padding-top: 17px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
+    border: 7px solid #DDBFBD;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+
+.vara-text,
+.vara-price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+
+.vara-price {
+    font-weight: normal;
+    margin-bottom: 40px;
 }
 
 .info {
@@ -162,7 +199,7 @@ h2.h2-normal {
 }
 
 .fourth {
-    background-image: url(../img/cardboard-text.jpg);
+    background-image: url(../img/bakan.jpg);
     background-repeat: no-repeat;
 }
 
@@ -174,7 +211,7 @@ p.info-text {
 /* Er í einhverju veseni með að koma iconunum í vertical align middle */
 .main-footer {
     height: 70px;
-    background-color: #767878;
+    background-color: #BDCECF;
     margin-top: 90px;
     width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
@@ -190,11 +227,14 @@ p.info-text {
 }
 
 .footer-mynd {
-    height: 30px;
+    height: 29px;
+    margin: 0 7px;
 }
 
 
-/* kemur í veg fyrir að myndit "strekkist" */
-.mynd {
-    align-self: center
+/* Stillingar á myndum í ramma */
+.vara-mynd {
+    align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
+    height: 300px; /* Myndir voru of stórar */
+    margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
 }
