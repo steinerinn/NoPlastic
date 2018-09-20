@@ -9,26 +9,31 @@
     text-decoration: none;
 }
 
-/* Í body fer allt sem á við um alla síðuna */
+/* Font family yfir allar síður */
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
-.main-container {
-    /* Setur container max width út frá body (1280px) */
-    width: 100%;
+    font-family: 'Rubik', sans-serif;
 }
 
 /* Dropshadow undir navbar */
 header {
     background: linear-gradient(to bottom, rgba(255,255,255,1) 60%, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); /* Fade out pælingin í navbar */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 90px;
+    height: 80px;
     position: fixed; /* Set navbar í fixed position */
     top: 0; /* Staðsett á toppnum */
     width: 100%; /* Full width, annars fellur flexið saman*/
-    max-width: 1440px;  /* Verður að hafa þetta, annars stækkar umfram 1440px */
+}
+
+/* Navbar linkar skilgreindir */
+li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #363636;
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #ddbfbd;
 }
 
 /* Stillingar á navbar í header */
@@ -37,7 +42,8 @@ header {
 }
  /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
 .logo {
-    margin: 0 100px 0 -100px;
+    margin: 0 120px 0 -80px;
+    height: 65px;
 }
 
 /* Bil á milli hnappa í navbar */
@@ -46,10 +52,11 @@ header {
 }
 
 .front-page {
-    background-image: url(../img/raw_main_image.jpg);
+    background-image: url(../img/main-banner.jpg);
     background-repeat: no-repeat;
-    height: 850px;
-    margin-top: 90px;
+    background-size: cover;
+    height: 100vh;
+
 }
 
 /* Heading í mynd */
