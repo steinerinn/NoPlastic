@@ -22,7 +22,7 @@ header {
     flex-wrap: wrap;
     align-self: center;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 /* Child af voru-content */
@@ -30,7 +30,6 @@ header {
     display: flex;
     flex-direction: column;
     height: 470px;
-    align-items: stretch;
     justify-content: space-between;
 }
 
