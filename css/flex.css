@@ -25,12 +25,22 @@ header {
     justify-content: center;
 }
 
+.vara-texti {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    max-width: 1400px;
+}
+
 /* Child af voru-content */
 .vara {
     display: flex;
     flex-direction: column;
-    height: 470px;
-    justify-content: space-between;
+    height: 552px;
+    width: 380px;
+    margin: 12px 10px;
 }
 
 /* Heitir hér buy en er bæði kaupa og read more hnappaútlit */
