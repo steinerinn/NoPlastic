@@ -1,11 +1,12 @@
 .test-container{
 	padding-top: 100px;
 	margin:0 auto;
-	width: 90%;
+	
 }
 .product-holder{
 	display: flex;
 	justify-content: center;
+	margin:0 auto;
 	margin-left: 300px;
 }
 .img-holder{
@@ -47,14 +48,20 @@
 	font-size: 18px;
 }
 .txt-holder .main-p{
-	width: 60%;
+	width: 40%;
 }
 .boxy{
+	align-items: center;
+}
+.boxy-text{
 	border: 2px solid #DDBFBD;
-	border-radius: 5%;
+	border-radius: 15%;
 	width: 30px;
 	height: 30px;
 	text-align: center;
+	align-self: center;
+	margin:15px 0px;
+	line-height: 30px;
 }
 .add-btn-holder{
 	padding-top: 15px;
@@ -71,4 +78,13 @@
 
 .txt-holder ul li {
 	list-style-type: circle;
+	width: 60%;
+}
+
+#you-may-also-like{
+	margin-top: 50px;
+	height: 400px;
+	background-color: #DDBFBD;
+	width: 100%;
+
 }
