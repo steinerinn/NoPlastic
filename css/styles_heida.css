@@ -274,6 +274,33 @@ p.info-text {
     max-width: 1400px;
 }
 
+/***** CART SÍÐA - TABLES *****/
+
+.cart_container {
+    margin-top: 80px;
+}
+.cart_items {
+    width: 80%;
+    margin: 0 auto;
+}
+.cart_total {
+    width: 40%;
+    
+}
+.cart_items tr {
+    
+
+}
+.cart_items tr th {
+    font-size: 32;
+    font-weight: 300;
+    background-color: #DDBFBD;
+    text-transform: uppercase;
+}
+.cart_items tr td {
+    font-weight: 300;
+}
+
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
 @media (max-width:1220px) {
 
