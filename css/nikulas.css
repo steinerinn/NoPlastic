@@ -1,3 +1,6 @@
+.active{
+	text-decoration: underline;
+}
 .test-container{
 	padding-top: 100px;
 	margin:0 auto;
@@ -23,13 +26,16 @@
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
 	margin:5px;
+	margin-right: 40px;
 }
 .main-img{
 	margin-top:5px;
 	height: 380px;
-	width: 200px;
+	width: 250px;
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
+	margin-right: 40px;
+
 
 }
 .txt-holder{
@@ -45,10 +51,13 @@
 }
 .txt-holder p, ul li {
 	margin-top: 25px;
-	font-size: 18px;
+	font-size: 20px;
+}
+ul {
+	width: 60%;
 }
 .txt-holder .main-p{
-	width: 40%;
+	width: 60%;
 }
 .boxy{
 	align-items: center;
@@ -70,10 +79,14 @@
 .add-btn{
 	color: #fff;
     padding: 5px 10px;
-    background-color: #DDBFBD;
+    background-color: #DDBFBD;;
      border: 1px solid #DDBFBD;
     border-radius: 25px;
     font-size: 24px;
+}
+.add-btn:hover{
+	background-color: #fff;
+	color: #DDBFBD;
 }
 
 .txt-holder ul li {
@@ -83,8 +96,54 @@
 
 #you-may-also-like{
 	margin-top: 50px;
-	height: 400px;
-	background-color: #DDBFBD;
+	min-height: 400px;
+	background-color: rgba(221, 191, 189, 0.3);
 	width: 100%;
 
+
+}
+.item-container{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+
+}
+.items-heading{
+	font-size: 38px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 35px 0px;
+}	
+.item{
+	border: 2px solid #DDBFBD;
+	border-radius: 5%;
+	z-index: 5;
+	width: 200px;
+	height: 300px;
+	margin-top: 15px;
+	background-color: #fff !important; 
+	text-align: center;
+	margin:0px 25px;
+}
+.item h1{
+	margin-top:15px;
+	text-transform: uppercase;
+
+}
+.card-image{
+	height: 200px;
+	z-index: 5;
+}
+.small-add-btn{
+	color: #DDBFBD;
+    padding: 10px 15px;
+    background-color: #fff;
+     border: 2px solid #DDBFBD;
+    border-radius: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.small-add-btn:hover{
+	background-color: #DDBFBD;
+	color: #fff;
 }
