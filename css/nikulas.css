@@ -1,3 +1,6 @@
+header nav{
+	z-index: 20 !important;
+}
 .active{
 	text-decoration: underline;
 }
@@ -22,7 +25,6 @@
 }
 .small-img{
 	height: 120px;
-	width: 70px;
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
 	margin:5px;
@@ -31,7 +33,6 @@
 .main-img{
 	margin-top:5px;
 	height: 380px;
-	width: 250px;
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
 	margin-right: 40px;
@@ -107,6 +108,7 @@ ul {
 	justify-content: center;
 	padding-bottom: 50px;
 
+
 }
 .items-heading{
 	font-size: 38px;
@@ -117,9 +119,9 @@ ul {
 .item{
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
-	z-index: 5;
-	width: 200px;
-	height: 300px;
+	
+	width: 30%;
+	height: 400px;
 	margin-top: 15px;
 	background-color: #fff !important; 
 	text-align: center;
@@ -131,8 +133,9 @@ ul {
 
 }
 .card-image{
-	height: 200px;
-	z-index: 5;
+	height: 300px;
+	width: 80%;
+
 }
 .small-add-btn{
 	color: #DDBFBD;
@@ -146,4 +149,36 @@ ul {
 .small-add-btn:hover{
 	background-color: #DDBFBD;
 	color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+   .txt-holder p , ul li {
+   	width: 100%;
+   }
+
+   .img-holder{
+   	flex-direction: column-reverse;
+   }
+   .small-images{
+   	flex-direction: row;
+   }
+   .product-holder{
+   	flex-direction: column;
+   	align-items: center;
+   	justify-content: center;
+   	margin:0 auto;
+   	text-align: center;
+   }
+    .item-container{
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	margin: 0 auto;
+    	width: 100%;
+    }
+    .item{
+    	margin-top: 15px;
+    	width: 70%;
+    	height: 400px;
+    }
 }
