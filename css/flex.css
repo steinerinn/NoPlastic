@@ -15,24 +15,7 @@ header {
     flex-direction: row;
 }
 
-/* Safn af vörum með verðmiða */
-.voru-content {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    align-self: center;
-    margin: auto;
-    justify-content: center;
-}
 
-.vara-texti {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: auto;
-    justify-content: center;
-    max-width: 1400px;
-}
 
 /* Child af voru-content */
 .vara {
