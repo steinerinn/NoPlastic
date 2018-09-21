@@ -212,7 +212,7 @@ p.info-text {
 .main-footer {
     height: 70px;
     background-color: #BDCECF;
-    margin-top: 90px;
+    /* margin-top: 90px; */
     width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
    
