@@ -70,16 +70,29 @@ li a:hover {
     height: 100vh;
 }
 
-/* Heading texti í mynd */
+/* Texti í forsíðumynd og shop now hnappur */
+
+.title-button {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30%;
+    padding-left: 50%;
+}
+
+#front-button {
+    box-shadow: none;
+    border: 1px solid #C2A2A0;
+}
+
+/* Heading texti í forsíðumynd mynd */
  h1.front-title-text{
-    margin-left: 855px;
-    padding-top: 405px;
     font-style: normal;
     font-weight: normal;
     line-height: 120px;
     font-size: 64px;
     text-align: center;
     color: #787878;
+    margin-bottom: 20px;
 }
 
 /* Almennt fyrir h2 */
@@ -102,6 +115,7 @@ h2.h2-normal {
     padding: 0 0 59px;
 }
 
+/* Bil sett svo texti klessist ekki við mynd */ 
 .second {
     padding-left: 120px;
 }
@@ -193,7 +207,7 @@ h2.h2-normal {
 }
 
 /* myndir í info gluggum */
-.fyrst {
+.first {
     background-image: url(../img/plastics.jpg);
     background-repeat: no-repeat;
 }
@@ -237,4 +251,53 @@ p.info-text {
     align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
     height: 300px; /* Myndir voru of stórar */
     margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
+}
+
+/* Safn af vörum með verðmiða */
+.voru-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.vara-texti {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+/* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
+@media (max-width:1220px) {
+
+    .voru-content {
+        flex-direction: column;
+    }
+
+    /* Röðun á efni í other content */
+    .first {
+        order: -2; /* Passa að þetta sé efst */
+    }
+
+    .second {
+        order: -1; /* Passa að þetta koma á eftir first */
+        padding-left: 0px; /* Fjarlægi padding svo textinn verðir eins og í third */
+    }
+
+    .third { 
+        order: 1; /* Passa að þetta verða á eftir fourth, verði neðst */
+    }
+
+    .fourth {
+        order: 0; /* Passa að þetta verði á eftir second */
+    }
+
+    .title-button {
+        padding: 15% 0 0;
+    }
 }
