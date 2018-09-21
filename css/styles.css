@@ -82,7 +82,8 @@ li a:hover {
 
 #front-button {
     box-shadow: none;
-    border: 1px solid #C2A2A0;
+    /* tók border af
+    border: 1px solid #C2A2A0;*/
 }
 
 /* Heading texti í forsíðumynd mynd */
@@ -130,7 +131,8 @@ h2.h2-normal {
     max-width: 350px;
     margin: -20px 0 90px;
     color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    /* tók út shadow þarna líka
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);*/
 }
 
 /* Bleikur takkarnir stórir  */
@@ -142,7 +144,8 @@ h2.h2-normal {
     padding: 10px 25px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    /* tók líka skugga þarna
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);*/
     border-radius: 20px;
     font-size: 24px;
 }
