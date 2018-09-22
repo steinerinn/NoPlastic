@@ -26,13 +26,14 @@ header {
 	display: flex;
 	justify-content: center;
 	margin:0 auto;
-	margin-left: 300px;
+	margin-left: 200px;
 	max-width: 90%;
+
 }
 .img-holder{
 	display: flex;
 	margin-top: 50px;
-	width: 100%;
+
 
 }
 .small-images{
@@ -58,7 +59,7 @@ header {
 
 }
 .txt-holder{
-	
+	margin-left: 10px;
 	
 
 }
@@ -70,15 +71,23 @@ header {
 
 
 }
-.txt-holder p, ul li {
+.txt-holder p, .test-container ul li {
 	margin-top: 25px;
 	font-size: 20px;
+
 }
-ul {
+.test-container ul li{
+	width: 40%;
+}
+.test-container ul {
 
 }
 .txt-holder .main-p{
-	
+	width: 60%;
+
+}
+.txt-holder .main-p, .test-container ul li{
+	min-width: 200px;
 }
 .boxy{
 	align-items: center;
@@ -143,16 +152,18 @@ ul {
 	border-radius: 5%;
 	width: 30%;
 	min-width: 150px;
-	height: 400px;
+	min-height: 450px;
 	margin-top: 15px;
 	background-color: #fff !important; 
 	text-align: center;
-	margin:0px 25px;
+	margin:0px 10px;
+
 }
 .item h1{
-	margin-top:15px;
+	padding-top:15px;
 	text-transform: uppercase;
-
+	width: 20%;
+	margin: 0 auto;
 }
 .card-image{
 	height: 300px;
@@ -176,11 +187,11 @@ ul {
 @media only screen and (max-width: 1150px) {
 	.img-holder{
 		position: relative;
-		right: 30%;
+		right: 20%;
 	}
 	.txt-holder{
 		position: relative;
-		right: 25%;
+		right: 15%;
 
 	}
 	
@@ -191,14 +202,21 @@ ul {
    	position: static;
    	margin:0 auto;
    }
+   .heading-container{
+  	position: absolute;
+  	top:100px;
+  	left: 50%;
+  	transform:translate(-50%,0%);
+  	width: 100%;
+   }
 
 	.small-img{
 		margin: -5px;
 	}
-	ul{
+	.txt-holder ul{
 		margin:0 auto;
 	}
-   .txt-holder main-p, ul li  {
+   .txt-holder .main-p, .txt-holder ul li  {
    	width: 100% !important;
 
    }
@@ -210,6 +228,7 @@ ul {
    .img-holder{
    	flex-direction: column-reverse;
    	position: static;
+   	padding-top: 100px;
 
    }
    .small-images{
@@ -228,7 +247,7 @@ ul {
  
    }
  .main-img{
-   		margin:0 auto;
+   	margin:0 auto;
 
 
    }
@@ -242,6 +261,7 @@ ul {
    	justify-content: center;
    	margin:0 auto;
    	text-align: center;
+   
 
    }
   
@@ -263,7 +283,10 @@ ul {
     	
 
     }
-    .heading-container{
-    	order: -1;
-    }
+   
+}
+@media only screen and (max-width: 480px){
+	.item{
+		width: 90%;
+	}
 }
