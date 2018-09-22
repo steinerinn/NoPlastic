@@ -35,8 +35,7 @@ li a {
     text-align: center;
     /* textcolor noplastic */
     color: #363636;
-    /* mér finnst betra að hafa engan skugga 
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 li a:hover {
@@ -82,8 +81,7 @@ li a:hover {
 
 #front-button {
     box-shadow: none;
-    /* tók border af
-    border: 1px solid #C2A2A0;*/
+    border: 1px solid #C2A2A0;
 }
 
 /* Heading texti í forsíðumynd mynd */
@@ -131,8 +129,7 @@ h2.h2-normal {
     max-width: 350px;
     margin: -20px 0 90px;
     color: #000000;
-    /* tók út shadow þarna líka
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Bleikur takkarnir stórir  */
@@ -144,8 +141,7 @@ h2.h2-normal {
     padding: 10px 25px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
-    /* tók líka skugga þarna
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 24px;
 }
@@ -161,8 +157,7 @@ h2.h2-normal {
     padding: 10px 35px;
     background-color: #5D9699;
     border: 3px solid #5D9699;
-    /* skugginn off
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-size: 24px;
 }
@@ -231,7 +226,7 @@ p.info-text {
 .main-footer {
     height: 70px;
     background-color: #BDCECF;
-    /* margin-top: 90px; */
+    margin-top: 90px;
     width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
    
@@ -303,6 +298,6 @@ p.info-text {
     }
 
     .title-button {
-        padding: 15% 0 0;
+        padding: 10% 0 0;
     }
 }
