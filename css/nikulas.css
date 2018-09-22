@@ -1,7 +1,13 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
 *{
 	box-sizing: border-box;
 }
-header nav{
+header {
 	z-index: 20 !important;
 }
 .active{
@@ -46,12 +52,13 @@ header nav{
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
 	margin-right: 40px;
+	min-width: 300px;
 	width: 70%;
-
 
 }
 .txt-holder{
-	padding-left: 50px;
+	
+	
 
 }
 .txt-holder h1{
@@ -104,6 +111,7 @@ ul {
 
 .txt-holder ul li {
 	list-style-type: circle;
+
 	
 }
 
@@ -121,6 +129,7 @@ ul {
 	padding-bottom: 50px;
 
 
+
 }
 .items-heading{
 	font-size: 38px;
@@ -131,8 +140,8 @@ ul {
 .item{
 	border: 2px solid #DDBFBD;
 	border-radius: 5%;
-	
 	width: 30%;
+	min-width: 150px;
 	height: 400px;
 	margin-top: 15px;
 	background-color: #fff !important; 
@@ -157,21 +166,31 @@ ul {
     border-radius: 25px;
     font-size: 16px;
     text-transform: uppercase;
+
 }
 .small-add-btn:hover{
 	background-color: #DDBFBD;
 	color: #fff;
 }
 @media only screen and (max-width: 1150px) {
-	.product-holder{
-		margin-right: 200px;
+	.img-holder{
+		position: relative;
+		right: 30%;
 	}
+	.txt-holder{
+		position: relative;
+		right: 25%;
+
+	}
+	
 }
 
 @media only screen and (max-width: 768px) {
-   .image-holder{
-   align-items: center;
+   .txt-holder{
+   	position: static;
+   	margin:0 auto;
    }
+
 	.small-img{
 		margin: -5px;
 	}
@@ -189,6 +208,7 @@ ul {
 
    .img-holder{
    	flex-direction: column-reverse;
+   	position: static;
 
    }
    .small-images{
@@ -201,15 +221,19 @@ ul {
    .small-img{
    	display: flex;
    	margin: 5px;
-   	width: 23%;
+   	width: 25%;
    	height: 200px;
   
  
    }
-   .main-image{
-   	margin-right: -40px;
+ .main-img{
+   		margin:0 auto;
 
 
+   }
+   .main-img{
+   	width: 80%;
+   	height: auto;
    }
    .product-holder{
    	flex-direction: column;
@@ -217,6 +241,7 @@ ul {
    	justify-content: center;
    	margin:0 auto;
    	text-align: center;
+
    }
   
     .item-container{
@@ -233,6 +258,7 @@ ul {
     }
     .txt-holder h1{
     	padding-top: 40px;
+
     	
 
     }
