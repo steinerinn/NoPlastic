@@ -48,6 +48,9 @@ header {
 	margin:5px;
 	margin-right: 40px;
 }
+.small-img:hover{
+	border: 4px solid #DDBFBD;
+}
 .main-img{
 	margin-top:5px;
 	height: auto;
@@ -56,6 +59,11 @@ header {
 	margin-right: 40px;
 	min-width: 300px;
 	width: 70%;
+
+}
+.main-img:hover{
+	border: 6px solid #DDBFBD;
+	
 
 }
 .txt-holder{
@@ -159,6 +167,10 @@ header {
 	margin:0px 10px;
 
 }
+.item:hover{
+	border: 6px solid #DDBFBD;
+
+}
 .item h1{
 	padding-top:15px;
 	text-transform: uppercase;
@@ -170,6 +182,7 @@ header {
 	width: 80%;
 
 }
+
 .small-add-btn{
 	color: #DDBFBD;
     padding: 10px 15px;
@@ -179,6 +192,10 @@ header {
     font-size: 16px;
     text-transform: uppercase;
 
+}
+.item:hover  .small-add-btn{
+	background-color: #DDBFBD;
+	color: #fff;
 }
 .small-add-btn:hover{
 	background-color: #DDBFBD;
@@ -215,6 +232,7 @@ header {
 	}
 	.txt-holder ul{
 		margin:0 auto;
+		text-align: left;
 	}
    .txt-holder .main-p, .txt-holder ul li  {
    	width: 100% !important;
