@@ -276,6 +276,15 @@ p.info-text {
 
 /***** CART SÍÐA - TABLES *****/
 
+
+.cart_container h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+}
 .cart_container {
     margin-top: 80px;
 }
@@ -283,22 +292,43 @@ p.info-text {
     width: 80%;
     margin: 0 auto;
 }
-.cart_total {
-    width: 40%;
-    
-}
-.cart_items tr {
-    
-
+.cart_items td img {
+    height: 60px;
 }
 .cart_items tr th {
     font-size: 32;
     font-weight: 300;
     background-color: #DDBFBD;
     text-transform: uppercase;
+    height: 60px;
+    vertical-align: middle;
 }
 .cart_items tr td {
     font-weight: 300;
+    height: 60px;
+    border-bottom: 3px solid #DDBFBD;
+    vertical-align: middle;
+}
+td.ci_center {
+    text-align: center;
+}
+td.ci_right {
+    text-align: right;
+}
+
+/* neðri hlutinn af cartinu "TOTAL"*/
+.cart_total {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+.cart_total tr th {
+    border-bottom: 2px solid #DDBFBD;
+}
+.cart_total tr td {
+    border-top: 2px solid #DDBFBD;
 }
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
