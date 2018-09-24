@@ -1,5 +1,5 @@
 
-/* ----------Ásdís CODE-------------- */
+/* --------------Ásdís CODE-------------- */
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -15,7 +15,7 @@ body {
     padding-top: 80px;
 
 }
-/* ----------White Container-------------*/ 
+/* --------------White Container-------------*/ 
 .white {
     background-color: #fff;
     width: 60%;
@@ -24,9 +24,9 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-/* ----------White HEADER --------------*/ 
+/* --------------White HEADER --------------*/ 
 .white_header {
-    width: 40%;
+    width: 50%;
     height: 100px;
     display: flex;
     align-items: center;
@@ -35,77 +35,128 @@ body {
     margin: 50px 0;
 }
 .white_header img {
-    width: 40px;
+    width: 36px;
+}
+.white_header span {
+    color: #787878;
 }
 
-/* ----------White CONTENT--------------*/ 
+/* --------------White CONTENT--------------*/ 
 .white_content {
-    width: 60%;
+    width: 70%;
 }
 .title-white {
-    display: inline;
     display: flex;
     justify-content: space-between;
+    font-size: 16px;
+}
+.title-white label {
+    font-size: 20px;
 }
 .title-white a {
     color: #5D9699;
     padding-left: 5px;
     text-transform: uppercase;
 }
-form input[type=text] {
-    width: 100%;
-    border-radius: 15px;
-    border: 2px solid #787878;
-    padding: 0.7em;
-    font-family: 'Rubik', sans-serif;
-    color: #DCDCDC;
-    display: block;
-    margin: 10px 0;
-}
-/* -------cheackbox----*/
+/* --------------Cheackbox --------------*/
 .offers,
 .save {
     width: 100%;
     font-size: 14px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 30px 0; 
+    text-align: justify;
+}
+/* --------------Cheackbox STYLING--------------*/
+.box_container {
+    padding-left: 30px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;  
+}
+.box_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 3px solid #5D9699;
+    border-radius: 3px;
+}
+.box_container input:checked ~ .checkmark {
+    background-color: #5D9699; 
+    border-radius: 3px;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.box_container input:checked ~ .checkmark:after {
+    display: block;
+}
+.box_container .checkmark:after {
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+/* --------------FROMS--------------*/
+form input[type=text] {
+    width: 100%;
+    border-radius: 13px;
+    border: 2px solid #787878;
+    padding: 6px 6px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    display: block;
+    margin: 15px 0;
+}
+/* --------------Form PLACEHOLDER COLOR AND STYLING--------------*/
+::placeholder {
+     color: #DCDCDC;
 }
 form label:nth-child(4) {
     display: block;
+    font-size: 20px;
 }
 .form_rows {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin: 15px 0;
 }
-
 form .form_rows input {
     width: 48%;
+    margin: 0;
 }
-/*
-form input:nth-child(6),
-form input:nth-child(10),
-form input:nth-child(11)  {
-    width: 40%;
-}
-/* ----------White BUTTON--------------*/ 
+/*--------------White BUTTON--------------*/ 
 .buttons {
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-bottom: 100px;
 }
 .white_content button {
     border-radius: 20px;
-    padding: 0.7em;
+    padding: 10px;
     background-color: #DDBFBD;
     color: #fff;
     font-size: 16px;
     text-transform: uppercase; 
     border: 3px solid #DDBFBD; 
+    display: inline;
 }
 .white_content button[type=submit] {
     margin-left: 40px;
@@ -115,8 +166,7 @@ form input:nth-child(11)  {
     color: #DDBFBD;
     border: 3px solid #DDBFBD;
 }
-
-/* ----------Pink Container--------------*/ 
+/* --------------Pink Container--------------*/ 
 .pink {
     background-color: #DDBFBD;
     width: 40%;
@@ -133,10 +183,9 @@ form input:nth-child(11)  {
 }
 .pink_content table{
     width: 90%;
-   /* display: block;*/
 }
-/* ----------Pink Mr. Bamboo--------------*/ 
- .pink_content tbody td {
+/* --------------Pink Mr. Bamboo--------------*/ 
+.pink_content tbody td {
     line-height: 30px;
 }
 .pink_content img {
@@ -154,7 +203,7 @@ form input:nth-child(11)  {
 .pink_content tbody tr td:nth-child(3) {
     text-align: end;
 }
-/* ----------Pink Total--------------*/ 
+/*--------------Pink Total--------------*/ 
 .buttom_table {
     width: 90%;
     padding-bottom: 50px;
@@ -171,7 +220,7 @@ form input:nth-child(11)  {
 .buttom_table tr td {
     border-top: 3px solid #787878; 
 }
-/* ----------MEDIA--------------*/ 
+/* --------------MEDIA--------------*/ 
 @media only screen and (max-width: 780px) {
     .container {
     display: flex; 
@@ -185,10 +234,16 @@ form input:nth-child(11)  {
         font-size: 16px; 
         padding: 0.5em;
     }
+    .white_content {
+    width: 90%;
+    }
+    .white_header {
+    width: 70%; 
+    }
     .pink_content,
     .buttom_table {
         padding-top: 30px;
-
     }
+
 
 }
