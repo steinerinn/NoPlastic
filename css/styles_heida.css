@@ -279,6 +279,9 @@ p.info-text {
 
 /* efri hluti af carti "CART ITEMS" */
 
+.cart_container {
+    margin-top: 75px;
+}
 .cart_container h2 {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -286,9 +289,6 @@ p.info-text {
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
-}
-.cart_container {
-    margin-top: 80px;
 }
 .cart_items {
     width: 80%;
@@ -336,9 +336,9 @@ th.order_total {
     font-size: 20px;
     font-weight: 400;
     width: 30%;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 25px auto;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
 }
 
 .cart_total tr th,
@@ -350,11 +350,11 @@ td {
 /****** CART BUTTONS ******/
 
 .cart_btn_holder{
-    margin: 50px;
+    margin: 35px;
 }
-.cart_btn_holder .cont_shop_btn{
+.cont_shop_btn{
     color: #DDBFBD;
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: #fff;
     border: 3px solid #DDBFBD;
     border-radius: 20px;
@@ -362,13 +362,13 @@ td {
     font-weight: 300;
     text-transform: uppercase;
 }
-.cart_btn_holder .cont_shop_btn:hover{
+.cont_shop_btn:hover{
     background-color: #DDBFBD;
     color: #fff;
 }
-.cart_btn_holder .checkout_btn{
+.checkout_btn{
     color: #fff;
-    padding: 10px 25px;
+    padding: 10px 15px;
     background-color: #DDBFBD;
     border: 3px solid #DDBFBD;
     border-radius: 20px;
@@ -376,7 +376,7 @@ td {
     font-weight: 300;
     text-transform: uppercase;
 }
-.cart_btn_holder .checkout_btn:hover{
+.checkout_btn:hover{
     background-color: white;
     color: #DDBFBD;
 }
