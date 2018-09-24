@@ -227,11 +227,12 @@ p.info-text {
 /* Er í einhverju veseni með að koma iconunum í vertical align middle */
 .main-footer {
     height: 70px;
-    background-color: #BDCECF;
+    display: flex;
     /* margin-top: 90px; */
     width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
-   
+    background-color: #BDCECF;
+    
    
 }
 .footer-content{
@@ -297,8 +298,11 @@ p.info-text {
     height: 60px;
     padding-left: 20px;
 }
+td.product_img {
+    width: 10%;
+}
 .cart_items tr th {
-    font-size: 32;
+    font-size: 24px;
     font-weight: 300;
     background-color: #DDBFBD;
     text-transform: uppercase;
@@ -306,6 +310,7 @@ p.info-text {
     vertical-align: middle;
 }
 .cart_items tr td {
+    font-size: 18px;
     font-weight: 300;
     height: 60px;
     border-bottom: 3px solid #DDBFBD;
@@ -320,23 +325,60 @@ th.total{
     text-align: right;
     padding-right: 20px;
 }
-th.product {
+th.product,
+th.order_total {
     text-align: left;
     padding-left: 20px;
 }
 
 /* neðri hlutinn af cartinu "TOTAL"*/
 .cart_total {
+    font-size: 20px;
+    font-weight: 400;
     width: 30%;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    
 }
+
 .cart_total tr th,
 td {
     border-top: 2px solid #DDBFBD;
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/****** CART BUTTONS ******/
+
+.cart_btn_holder{
+    margin: 50px;
+}
+.cart_btn_holder .cont_shop_btn{
+    color: #DDBFBD;
+    padding: 10px 25px;
+    background-color: #fff;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.cart_btn_holder .cont_shop_btn:hover{
+    background-color: #DDBFBD;
+    color: #fff;
+}
+.cart_btn_holder .checkout_btn{
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.cart_btn_holder .checkout_btn:hover{
+    background-color: white;
+    color: #DDBFBD;
 }
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
