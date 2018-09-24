@@ -227,11 +227,12 @@ p.info-text {
 /* Er í einhverju veseni með að koma iconunum í vertical align middle */
 .main-footer {
     height: 70px;
-    background-color: #BDCECF;
+    display: flex;
     /* margin-top: 90px; */
     width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
-   
+    background-color: #BDCECF;
+    
    
 }
 .footer-content{
@@ -276,29 +277,108 @@ p.info-text {
 
 /***** CART SÍÐA - TABLES *****/
 
+/* efri hluti af carti "CART ITEMS" */
+
 .cart_container {
-    margin-top: 80px;
+    margin-top: 75px;
+}
+.cart_container h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
 }
 .cart_items {
     width: 80%;
     margin: 0 auto;
 }
-.cart_total {
-    width: 40%;
-    
+.cart_items td img {
+    height: 60px;
+    padding-left: 20px;
 }
-.cart_items tr {
-    
-
+td.product_img {
+    width: 10%;
 }
 .cart_items tr th {
-    font-size: 32;
+    font-size: 24px;
     font-weight: 300;
     background-color: #DDBFBD;
     text-transform: uppercase;
+    height: 60px;
+    vertical-align: middle;
 }
 .cart_items tr td {
+    font-size: 18px;
     font-weight: 300;
+    height: 60px;
+    border-bottom: 3px solid #DDBFBD;
+    vertical-align: middle;
+} 
+td.price,
+td.quantity  {
+    text-align: center;
+}
+td.total,
+th.total{
+    text-align: right;
+    padding-right: 20px;
+}
+th.product,
+th.order_total {
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* neðri hlutinn af cartinu "TOTAL"*/
+.cart_total {
+    font-size: 20px;
+    font-weight: 400;
+    width: 30%;
+    margin: 25px auto;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+}
+
+.cart_total tr th,
+td {
+    border-top: 2px solid #DDBFBD;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/****** CART BUTTONS ******/
+
+.cart_btn_holder{
+    margin: 35px;
+}
+.cont_shop_btn{
+    color: #DDBFBD;
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.cont_shop_btn:hover{
+    background-color: #DDBFBD;
+    color: #fff;
+}
+.checkout_btn{
+    color: #fff;
+    padding: 10px 15px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.checkout_btn:hover{
+    background-color: white;
+    color: #DDBFBD;
 }
 
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
