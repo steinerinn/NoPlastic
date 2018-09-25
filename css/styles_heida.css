@@ -296,7 +296,6 @@ p.info-text {
 }
 td.product_img {
     width: 10%;
-    padding-left: 20px;
 }
 div.img_frame {
     background:transparent;
@@ -306,8 +305,7 @@ div.img_frame {
     width: 70px;
 }
 .cart_items td img {
-    height: 60px;
-    align-items: center;
+    height: 55px;
 }
 .cart_items tr th {
     font-size: 20px;
@@ -316,6 +314,7 @@ div.img_frame {
     text-transform: uppercase;
     height: 40px;
     vertical-align: middle;
+    padding: 0px 10px;
 }
 .cart_items tr td {
     font-size: 18px;
@@ -323,20 +322,24 @@ div.img_frame {
     height: 60px;
     border-bottom: 3px solid #DDBFBD;
     vertical-align: middle;
-    padding-left: 5px;
-} 
-td.price  {
-    text-align: center;
+    padding: 5px 5px;
 }
-td.total,
-th.total{
-    text-align: right;
-    padding-right: 20px;
+/*stærðin á myndunum inní rammanum*/
+.cart_items td img {
+    height: 55px;
 }
-th.product,
-th.order_total {
+/*padding vinstra megin í table*/
+.cart_items td.product_img {
+    padding-left: 20px;
+}
+.cart_items th.product {
     text-align: left;
     padding-left: 20px;
+}
+/*centera verðið og magnið
+til að búa til + og - gaurana*/
+td.price  {
+    text-align: center;
 }
 td.quantity {
     text-align: center;
@@ -347,23 +350,37 @@ p.quantity {
     border-radius: 10px;
     padding: 10px 5px;
 }
-td.quantity_add, td.quantity_remove {
+td.quantity_add,
+td.quantity_remove {
     text-align: center;
     width: 5%;
 }
-/* neðri hlutinn af cartinu "TOTAL"*/
+/* total dálkur - til að fá stærra padding á hægri endann á table*/
+.cart_items td.total,
+.cart_items th.total {
+    text-align: right;
+    padding-right: 20px;
+}
+/* neðri table af cartinu "TOTAL"*/
 .cart_total {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     width: 300px;
     margin: 20px auto;
 }
-
-.cart_total tr th,
-td {
+.cart_total tr td, th {
     border-top: 2px solid #DDBFBD;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px;
+}
+.final_total {
+    text-align: left;
+}
+.order_total, .currency {
+    text-align: right;
+}
+.cart_total th {
+    background-color: #DDBFBD;
+    font-weight: 400;
 }
 /****** CART BUTTONS ******/
 
@@ -432,6 +449,7 @@ td {
         padding: 15% 0 0;
     }
 }
+
 @media (max-width:600px) {
     .cont_shop_btn{
         font-size: 16px;
@@ -444,10 +462,17 @@ td {
     .cart_items tr th {
         font-size: 16px;
         height: 35px;
-        padding: 0px 10px;
     }
     .cart_items tr td {
         font-size: 16px;
+    }
+    .cart_items td.product_img,
+    .cart_items th.product {
+        padding-left: 10px;
+    }
+    .cart_items td.total,
+    .cart_items th.total {
+        padding-right: 10px;
     }
     .cart_btn_holder{
         width: 90%;
@@ -461,9 +486,9 @@ td {
         padding: 10px 0px;
     }
     .cart_container h2 {
-    margin-top: 95px;
-    margin-bottom: 15px;
-    font-size: 45px;
+        margin-top: 95px;
+        margin-bottom: 15px;
+        font-size: 45px;
     }
 }
 @media (max-width:450px) {
