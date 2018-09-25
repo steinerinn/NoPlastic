@@ -294,12 +294,25 @@ p.info-text {
     width: 80%;
     margin: 0 auto;
 }
-.cart_items td img {
-    height: 60px;
-    padding-left: 20px;
-}
 td.product_img {
     width: 10%;
+    padding-left: 20px;
+}
+div.img_frame {
+    background:transparent;
+    padding:5px;
+    border:2px solid #DDBFBD;
+    border-radius: 15px;
+    width: 70px;
+}
+.cart_items td img {
+    height: 60px;
+    align-items: center;
+    /*padding: 5px;
+    border: 2px solid #DDBFBD;
+    border-radius: 15px;*/
+    
+    
 }
 .cart_items tr th {
     font-size: 24px;
