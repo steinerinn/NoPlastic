@@ -160,11 +160,12 @@ header {
 	border-radius: 5%;
 	width: 30%;
 	min-width: 150px;
-	min-height: 450px;
+	max-height: 450px;
 	margin-top: 15px;
 	background-color: #fff !important; 
 	text-align: center;
 	margin:0px 10px;
+
 
 }
 .item:hover{
@@ -175,27 +176,41 @@ header {
 	padding-top:15px;
 	text-transform: uppercase;
 	width: 20%;
-	margin: 0 auto;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%,0%);
+}
+.card-img-container{
+	height: 250px;
 }
 .card-image{
-	height: 300px;
+	height: auto;
+	max-height: 260px;
 	width: 80%;
 
 }
+.small-add-btn-holder{
 
+	height: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
 .small-add-btn{
-	color: #DDBFBD;
+	color: #fff;
     padding: 10px 15px;
-    background-color: #fff;
+    background-color: #DDBFBD;
      border: 2px solid #DDBFBD;
     border-radius: 25px;
     font-size: 16px;
     text-transform: uppercase;
+   
+  }
 
-}
 .item:hover  .small-add-btn{
-	background-color: #DDBFBD;
-	color: #fff;
+	background-color: #fff;
+	color: #DDBFBD;
 }
 .small-add-btn:hover{
 	background-color: #DDBFBD;
