@@ -48,7 +48,7 @@ li a:hover {
 }
 
 /* Stillingar á navbar í header */
-.cart-ico {
+.cart-icon {
     margin: 0 53px 0 22px;
 }
 
@@ -56,9 +56,24 @@ li a:hover {
     height: 36px;
 }
 
-/*.nav-icon:hover {
-    color: #363636;
-}*/
+/* Litur á svg breytist með hoveri */
+a svg:hover #sign-svg,
+a svg:hover #cart-svg {
+    fill: #DDBFBD;
+}
+
+/*Lætur liti í hover koma hægar inn og hægar út */
+a svg #sign-svg,
+a svg #cart-svg,
+li a:hover,
+.btn-green:hover,
+.btn:hover { 
+  transition: 200ms;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 200ms;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
  /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
 .logo {
     margin: 0 120px 0 -80px;
