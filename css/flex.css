@@ -21,6 +21,7 @@ header {
 .vara {
     display: flex;
     flex-direction: column;
+    align-items: center;
     height: 552px;
     width: 380px;
     margin: 12px 10px;

@@ -55,6 +55,7 @@ li a:hover {
 
 .nav-icon {
     height: 36px;
+    color: #363636;
 }
  /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
 .logo {
@@ -75,7 +76,7 @@ li a:hover {
 .title-button {
     display: flex;
     flex-direction: column;
-    padding-top: 30%;
+    padding-top: 52vh;
     padding-left: 50%;
 }
 
@@ -275,7 +276,8 @@ p.info-text {
 /* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
 @media (max-width:1220px) {
 
-    .voru-content {
+    .voru-content,
+    .other-content {
         flex-direction: column;
     }
 
@@ -298,6 +300,31 @@ p.info-text {
     }
 
     .title-button {
-        padding: 10% 0 0;
+        padding: 220px 0 0;
+    }
+}
+
+/* 600px er til að laga other content á forsíðu */
+@media (max-width:600px) {
+    .info {
+        min-width: 0;
+        width: auto;
+    }
+
+    .f-mynd {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:420px) {
+    /* Verið að staðsetja og breyta forsíðutexta á forsíðumynd */
+    h1.front-title-text {
+        font-size: 44px;
+        line-height: 60px;
+        margin-bottom: 0;
+    }
+    .btn-holder {
+        margin: 40px auto;
     }
 }
