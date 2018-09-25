@@ -363,7 +363,10 @@ td {
 /****** CART BUTTONS ******/
 
 .cart_btn_holder{
-    margin: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
 }
 .cont_shop_btn{
     color: #DDBFBD;
