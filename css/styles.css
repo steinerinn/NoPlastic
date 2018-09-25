@@ -35,7 +35,6 @@ li a {
     text-align: center;
     /* textcolor noplastic */
     color: #363636;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 li a:hover {
@@ -57,9 +56,9 @@ li a:hover {
     height: 36px;
 }
 
-.nav-icon:hover {
+/*.nav-icon:hover {
     color: #363636;
-}
+}*/
  /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
 .logo {
     margin: 0 120px 0 -80px;
