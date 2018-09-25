@@ -55,6 +55,9 @@ li a:hover {
 
 .nav-icon {
     height: 36px;
+}
+
+.nav-icon:hover {
     color: #363636;
 }
  /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
