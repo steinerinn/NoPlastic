@@ -269,6 +269,7 @@ p.info-text {
     align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
     height: 300px; /* Myndir voru of stórar */
     margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
+    outline: none;
 }
 
 /* Safn af vörum með verðmiða */
