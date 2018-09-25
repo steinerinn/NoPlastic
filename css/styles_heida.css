@@ -308,18 +308,13 @@ div.img_frame {
 .cart_items td img {
     height: 60px;
     align-items: center;
-    /*padding: 5px;
-    border: 2px solid #DDBFBD;
-    border-radius: 15px;*/
-    
-    
 }
 .cart_items tr th {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 300;
     background-color: #DDBFBD;
     text-transform: uppercase;
-    height: 60px;
+    height: 40px;
     vertical-align: middle;
 }
 .cart_items tr td {
@@ -350,8 +345,6 @@ th.order_total {
     font-weight: 400;
     width: 300px;
     margin: 25px auto;
-    /*margin-top: 50px;
-    margin-bottom: 50px;*/
 }
 
 .cart_total tr th,
