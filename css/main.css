@@ -37,6 +37,9 @@ body {
 .white_header img {
     width: 36px;
 }
+.white_header span {
+    color: #787878;
+}
 /* --------------White CONTENT--------------*/ 
 .white_content {
     width: 70%;
@@ -220,7 +223,7 @@ form .form_rows input {
     border-top: 3px solid #787878; 
 }
 /* --------------MEDIA--------------*/ 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 930px) {
     .white_header {
     width: 70%; 
     }
