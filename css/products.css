@@ -1,3 +1,59 @@
+
+/* Typical body elements */
+* {
+    box-sizing: border-box;
+    /* Undirlína ofl teknir af links */
+    text-decoration: none;
+}
+/* Font family yfir allar síður */
+body {
+    font-family: 'Rubik', sans-serif;
+}
+/* --------------Flex BEGINNING ----------------*/
+/* Child af voru-content */
+.vara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 552px;
+    width: 280px;
+    margin: 12px 10px;
+}
+
+/* Heitir hér buy en er bæði kaupa og read more hnappaútlit */
+.buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Upplýsingatexti undir vörum */
+.other-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+/* Child af other-content */
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 554px;
+    min-width: 577px;
+    justify-content: center;
+}
+/* --------------Flex END ----------------*/
+/* Almennt fyrir h2 */
+h2 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 94px;
+    font-size: 50px;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding: 95px 0 59px;
 }
 /* Bleikur takkarnir stórir  */
 .btn-holder{
