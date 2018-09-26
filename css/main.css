@@ -51,7 +51,7 @@ body {
 }
 .title-white span {
     text-align: right;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 .title-white label {
     font-size: 20px;
@@ -256,5 +256,8 @@ form .form_rows input {
 @media only screen and (max-width: 480px) {
     .buttom_table {
     width: 100%;
+    }
+    .white_header img {
+        width: 30px;
     }
 }
