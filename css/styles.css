@@ -263,6 +263,15 @@ p.info-text {
     margin: 0 7px;
 }
 
+/* Vörum skipt niður í flex */
+.voru-content-duo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+}
 
 /* Stillingar á myndum í ramma */
 .vara-mynd {
@@ -340,9 +349,7 @@ p.info-text {
     h1.front-title-text {
         font-size: 44px;
         line-height: 60px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
     }
-    .btn-holder {
-        margin: 40px auto;
-    }
+
 }
