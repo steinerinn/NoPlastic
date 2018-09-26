@@ -19,7 +19,9 @@ body {
     width: 280px;
     margin: 12px 10px;
 }
-
+.second {
+    padding-top: 70px;
+}
 /* Heitir hér buy en er bæði kaupa og read more hnappaútlit */
 .buy {
     display: flex;
@@ -99,11 +101,6 @@ h2 {
     font-weight: normal;
     margin-bottom: 40px;
 }
-/* Bilið á milli vara og infoglugga */ 
-.other-content {
-    padding-top: 50px;
-}
-
 /* Er í einhverju veseni með að koma iconunum í vertical align middle */
 .main-footer {
     margin-top: 90px;
