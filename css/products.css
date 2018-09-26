@@ -37,14 +37,6 @@ body {
     margin: auto;
     justify-content: center;
 }
-/* Child af other-content */
-.info {
-    display: flex;
-    flex-direction: column;
-    height: 554px;
-    min-width: 577px;
-    justify-content: center;
-}
 /* --------------Flex END ----------------*/
 /* Almennt fyrir h2 */
 h2 {
@@ -142,6 +134,9 @@ h2 {
     .voru-content,
     .other-content {
         flex-direction: column;
+    }
+    .second {
+    padding-top: 0;
     }
 }    
 
