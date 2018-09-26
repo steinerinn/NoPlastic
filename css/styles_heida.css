@@ -1,8 +1,6 @@
 /* ================================= 
   Base Styles
 ==================================== */
-
-/* Typical body elements */
 /* Typical body elements */
 * {
     box-sizing: border-box;
@@ -272,30 +270,93 @@ td.quantity_remove {
     .voru-content {
         flex-direction: column;
     }
-
     /* Röðun á efni í other content */
     .first {
         order: -2; /* Passa að þetta sé efst */
     }
-
     .second {
         order: -1; /* Passa að þetta koma á eftir first */
         padding-left: 0px; /* Fjarlægi padding svo textinn verðir eins og í third */
     }
-
     .third { 
         order: 1; /* Passa að þetta verða á eftir fourth, verði neðst */
     }
-
     .fourth {
         order: 0; /* Passa að þetta verði á eftir second */
     }
-
     .title-button {
         padding: 15% 0 0;
     }
 }
+@media(max-width: 768px){
+	.hamburger-icon{
+		display: inline-block;
+		position: absolute;
+		right: 50px;
+		top:50%;
+		transform: translate(-0%,-50%);
+		cursor: pointer;
+	}
+	.x-icon{
+		font-size: 70px;
+		position: absolute;
+		right: 50px;
+		top:50%;
+		transform: translate(-0%,-50%);
+		cursor: pointer;
+		
+	}
+	.logo-holder{
+		position: absolute;
+		left: 50px;
+		top:50%;
+		transform: translate(-0%,-50%)
+	}
+	.nav_content{
+		order:1;
+		flex-direction: column;
+	}
+	header nav ul, .icon-holder{
+		margin-top:80px;
+	}
+	header nav ul li{
+		border: 1px solid black;
+		height: 150px;
+		margin-top: 1px;
+		background-color: #fff;
+    }
+	.icon-holder{
+		width: 100%;
+		background-color: #fff !important;
+		height: 200px;
+		z-index: 3;
+		position: relative;
+		left: 0px;
+		top:110px;
+		display: block !important;
+		border:1px solid black;	
+	}
+	.nav_icon{
+		position: relative;
+		left: 40%;
+		transform:translate(-40%,0%);
 
+    }			
+	header nav ul li a{
+		line-height: 60px;
+	}
+	header nav ul{
+		flex-direction: column !important;
+		position: relative;
+		left: 0px;
+		width: 100%;
+    }
+    header nav .close{
+        display: none;
+        border:none;
+    }
+	
+}
 @media (max-width:600px) {
     .cont_shop_btn{
         font-size: 16px;
@@ -337,6 +398,5 @@ td.quantity_remove {
         font-size: 45px;
     }
 }
-@media (max-width:450px) {
 
-}
+
