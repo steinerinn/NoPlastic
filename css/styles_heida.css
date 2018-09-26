@@ -1,7 +1,6 @@
 /* ================================= 
   Base Styles
 ==================================== */
-
 /* Typical body elements */
 * {
     box-sizing: border-box;
@@ -35,8 +34,7 @@ li a {
     text-align: center;
     /* textcolor noplastic */
     color: #363636;
-    /* mér finnst betra að hafa engan skugga 
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25); */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
 }
 
 li a:hover {
@@ -57,44 +55,28 @@ li a:hover {
 .nav-icon {
     height: 36px;
 }
-
  /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
 .logo {
     margin: 0 120px 0 -80px;
     height: 65px;
 }
 
-.front-page {
-    background-image: url(../img/main-banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-}
-
-/* Texti í forsíðumynd og shop now hnappur */
-
-.title-button {
+/* Gerir header og components í navbar að að flex containers */
+header,
+.flex-nav-left,
+.flex-nav-right {
     display: flex;
-    flex-direction: column;
-    padding-top: 30%;
-    padding-left: 50%;
+    align-items: center;
 }
 
-#front-button {
-    box-shadow: none;
-    border: 1px solid #C2A2A0;
+header {
+    justify-content: space-between;
+    z-index: 1000;
 }
 
-/* Heading texti í forsíðumynd mynd */
- h1.front-title-text{
-    font-style: normal;
-    font-weight: normal;
-    line-height: 120px;
-    font-size: 64px;
-    text-align: center;
-    color: #787878;
-    margin-bottom: 20px;
+.navbar {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Almennt fyrir h2 */
@@ -117,122 +99,13 @@ h2.h2-normal {
     padding: 0 0 59px;
 }
 
-/* Bil sett svo texti klessist ekki við mynd */ 
-.second {
-    padding-left: 120px;
-}
-
-/* Texti á forsíðu */
-.info-text {
-    font-style: normal;
-    font-weight: normal;
-    line-height: 32px;
-    font-size: 24px;
-    max-width: 350px;
-    margin: -20px 0 90px;
-    color: #000000;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* Bleikur takkarnir stórir  */
-.btn-holder{
-    margin:0 auto;
-}
-.btn-holder .btn{
-    color: #fff;
-    padding: 10px 25px;
-    background-color: #DDBFBD;
-    border: 3px solid #DDBFBD;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-size: 24px;
-}
-.btn-holder .btn:hover{
-    background-color: white;
-    color: #DDBFBD;
-    box-shadow: none;
-}
-/*Grænu takkarnir stórir */
-
-.btn-holder-green .btn-green{
-    color: #fff;
-    padding: 10px 35px;
-    background-color: #5D9699;
-    border: 3px solid #5D9699;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-    font-size: 24px;
-}
-.btn-holder-green .btn-green:hover{
-    background-color: white;
-    color: #5D9699;
-    box-shadow: none;
-}
-
- /* Stillingar á vöruglugga */
-.vara {
-    padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
-    border: 3px solid #DDBFBD;
-    box-sizing: border-box;
-    border-radius: 20px;
-}
-
-.vara:hover {
-    padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
-    border: 7px solid #DDBFBD;
-    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
-}
-
-.vara-text,
-.vara-price {
-    font-family: Rubik;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    font-size: 24px;
-    text-align: center;
-    color: #000000;
-}
-
-.vara-price {
-    font-weight: normal;
-    margin-bottom: 40px;
-}
-
-.info {
-    width: 43%;
-}
-
-/* Bilið á milli vara og infoglugga */ 
-.other-content {
-    padding-top: 50px;
-}
-
-/* myndir í info gluggum */
-.first {
-    background-image: url(../img/plastics.jpg);
-    background-repeat: no-repeat;
-}
-
-.fourth {
-    background-image: url(../img/bakan.jpg);
-    background-repeat: no-repeat;
-}
-
-/* paragraph textinn í info gluggum */
-p.info-text {
-    font-size: 30px;
-}
-
-/* Er í einhverju veseni með að koma iconunum í vertical align middle */
 .main-footer {
     height: 70px;
-    display: flex;
+    background-color: #BDCECF;
     /* margin-top: 90px; */
     width:100%;
     vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
-    background-color: #BDCECF;
-    
+   
    
 }
 .footer-content{
@@ -242,39 +115,10 @@ p.info-text {
     justify-content: center;
     align-items: center;
 }
-
 .footer-mynd {
     height: 29px;
     margin: 0 7px;
 }
-
-
-/* Stillingar á myndum í ramma */
-.vara-mynd {
-    align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
-    height: 300px; /* Myndir voru of stórar */
-    margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
-}
-
-/* Safn af vörum með verðmiða */
-.voru-content {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    align-self: center;
-    margin: auto;
-    justify-content: center;
-}
-
-.vara-texti {
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    margin: auto;
-    justify-content: center;
-    max-width: 1400px;
-}
-
 /***** CART SÍÐA - TABLES *****/
 
 /* efri hluti af carti "CART ITEMS" */
@@ -296,7 +140,6 @@ p.info-text {
 }
 td.product_img {
     width: 10%;
-    padding-left: 20px;
 }
 div.img_frame {
     background:transparent;
@@ -306,8 +149,7 @@ div.img_frame {
     width: 70px;
 }
 .cart_items td img {
-    height: 60px;
-    align-items: center;
+    height: 55px;
 }
 .cart_items tr th {
     font-size: 20px;
@@ -316,6 +158,7 @@ div.img_frame {
     text-transform: uppercase;
     height: 40px;
     vertical-align: middle;
+    padding: 0px 10px;
 }
 .cart_items tr td {
     font-size: 18px;
@@ -323,20 +166,24 @@ div.img_frame {
     height: 60px;
     border-bottom: 3px solid #DDBFBD;
     vertical-align: middle;
-    padding-left: 5px;
-} 
-td.price  {
-    text-align: center;
+    padding: 5px 5px;
 }
-td.total,
-th.total{
-    text-align: right;
-    padding-right: 20px;
+/*stærðin á myndunum inní rammanum*/
+.cart_items td img {
+    height: 55px;
 }
-th.product,
-th.order_total {
+/*padding vinstra megin í table*/
+.cart_items td.product_img {
+    padding-left: 20px;
+}
+.cart_items th.product {
     text-align: left;
     padding-left: 20px;
+}
+/*centera verðið og magnið
+til að búa til + og - gaurana*/
+td.price  {
+    text-align: center;
 }
 td.quantity {
     text-align: center;
@@ -347,23 +194,37 @@ p.quantity {
     border-radius: 10px;
     padding: 10px 5px;
 }
-td.quantity_add, td.quantity_remove {
+td.quantity_add,
+td.quantity_remove {
     text-align: center;
     width: 5%;
 }
-/* neðri hlutinn af cartinu "TOTAL"*/
+/* total dálkur - til að fá stærra padding á hægri endann á table*/
+.cart_items td.total,
+.cart_items th.total {
+    text-align: right;
+    padding-right: 20px;
+}
+/* neðri table af cartinu "TOTAL"*/
 .cart_total {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     width: 300px;
     margin: 20px auto;
 }
-
-.cart_total tr th,
-td {
+.cart_total tr td, th {
     border-top: 2px solid #DDBFBD;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px;
+}
+.final_total {
+    text-align: left;
+}
+.order_total, .currency {
+    text-align: right;
+}
+.cart_total th {
+    background-color: #DDBFBD;
+    font-weight: 400;
 }
 /****** CART BUTTONS ******/
 
@@ -409,28 +270,92 @@ td {
     .voru-content {
         flex-direction: column;
     }
-
     /* Röðun á efni í other content */
     .first {
         order: -2; /* Passa að þetta sé efst */
     }
-
     .second {
         order: -1; /* Passa að þetta koma á eftir first */
         padding-left: 0px; /* Fjarlægi padding svo textinn verðir eins og í third */
     }
-
     .third { 
         order: 1; /* Passa að þetta verða á eftir fourth, verði neðst */
     }
-
     .fourth {
         order: 0; /* Passa að þetta verði á eftir second */
     }
-
     .title-button {
         padding: 15% 0 0;
     }
+}
+@media(max-width: 768px){
+	.hamburger-icon{
+		display: inline-block;
+		position: absolute;
+		right: 50px;
+		top:50%;
+		transform: translate(-0%,-50%);
+		cursor: pointer;
+	}
+	.x-icon{
+		font-size: 70px;
+		position: absolute;
+		right: 50px;
+		top:50%;
+		transform: translate(-0%,-50%);
+		cursor: pointer;
+		
+	}
+	.logo-holder{
+		position: absolute;
+		left: 50px;
+		top:50%;
+		transform: translate(-0%,-50%)
+	}
+	.nav_content{
+		order:1;
+		flex-direction: column;
+	}
+	header nav ul, .icon-holder{
+		margin-top:80px;
+	}
+	header nav ul li{
+		border: 1px solid black;
+		height: 150px;
+		margin-top: 1px;
+		background-color: #fff;
+    }
+	.icon-holder{
+		width: 100%;
+		background-color: #fff !important;
+		height: 200px;
+		z-index: 3;
+		position: relative;
+		left: 0px;
+		top:110px;
+		display: block !important;
+		border:1px solid black;	
+	}
+	.nav_icon{
+		position: relative;
+		left: 40%;
+		transform:translate(-40%,0%);
+
+    }			
+	header nav ul li a{
+		line-height: 60px;
+	}
+	header nav ul{
+		flex-direction: column !important;
+		position: relative;
+		left: 0px;
+		width: 100%;
+    }
+    header nav .close{
+        display: none;
+        border:none;
+    }
+	
 }
 @media (max-width:600px) {
     .cont_shop_btn{
@@ -444,10 +369,17 @@ td {
     .cart_items tr th {
         font-size: 16px;
         height: 35px;
-        padding: 0px 10px;
     }
     .cart_items tr td {
         font-size: 16px;
+    }
+    .cart_items td.product_img,
+    .cart_items th.product {
+        padding-left: 10px;
+    }
+    .cart_items td.total,
+    .cart_items th.total {
+        padding-right: 10px;
     }
     .cart_btn_holder{
         width: 90%;
@@ -461,11 +393,10 @@ td {
         padding: 10px 0px;
     }
     .cart_container h2 {
-    margin-top: 95px;
-    margin-bottom: 15px;
-    font-size: 45px;
+        margin-top: 95px;
+        margin-bottom: 15px;
+        font-size: 45px;
     }
 }
-@media (max-width:450px) {
 
-}
+

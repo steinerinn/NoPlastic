@@ -11,32 +11,38 @@
     </head>
     
     <body id="master">
-        <!-- main-container heldur utan um allt og passar að það sé ekki meira en 1440px. -->
-        <div class="main-container">
-            <!-- Flex utan um flex-nav  -->
-            <header id="main-header">
-                <!-- Flex child af navbar til vinstri -->
-                <div class="flex-nav-left">
-                    <nav class="nav-left">
-                        <ul class="navbar">
-                            <li class="nav-buttons"><a href="products.html">Products</a>
-                            </li>
-                            <li class="nav-buttons"><a href="index.html">Blogs</a>
-                            </li>
-                            <li class="nav-buttons"><a href="index.html">About</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="flex-nav-center">
-                    <a href="index.html"><img class="logo" src="img/LOGO_LARGE.png"></a>
-                </div>
-                <!-- Flex child af navbar til hægri -->
-                <div class="flex-nav-right">
-                    <a href="index.html"><img class="nav-icon login-ico" src="img/signin.png"></a>
-                    <a href="index.html"><img class="nav-icon cart-ico" src="img/cart.png"></a>
-                </div>
-            </header>
+        <!-- Flex utan um flex-nav  -->
+        <header id="main-header">
+            <!-- Flex child af navbar til vinstri -->
+            <div class="flex-nav-left">
+                <nav class="nav-left">
+                    <ul class="navbar">
+                        <li class="nav-buttons"><a href="products.html">Products</a>
+                        </li>
+                        <li class="nav-buttons"><a href="blow.html">Blog</a>
+                        </li>
+                        <li class="nav-buttons"><a href="about.html">About</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex-nav-center">
+                <figure class="swap-on-hover">
+                    <a href="index.html"><img class="logo main-logo swap-on-hover__front-image" src="img/LOGO_LARGE.png"></a>
+                </figure>
+            </div>
+            <!-- Flex child af navbar til hægri -->
+            <div class="flex-nav-right">
+                <a href="index.html"><svg class="nav-icon sign-icon" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path id="sign-svg" fill="#363636" d="M15.3835 14.9418C19.403 14.9418 22.6917 11.6594 22.6917 7.64764C22.6917 3.63587 19.403 0.353516 15.3835 0.353516C11.3639 0.353516 8.0752 3.63587 8.0752 7.64764C8.0752 11.6594 11.3639 14.9418 15.3835 14.9418ZM15.3835 18.5889C10.4504 18.5889 0.766922 20.9595 0.766922 25.883V29.5301H30V25.883C30 20.9595 20.3165 18.5889 15.3835 18.5889Z" />
+                    </svg></a>
+                <a href="cart.html"><svg class="nav-icon cart-icon" width="38" height="37" viewBox="0 0 38 37" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path id="cart-svg" fill="#363636" d="M11.9474 29.7061C9.93759 29.7061 8.29323 31.3472 8.29323 33.3531C8.29323 35.359 9.93759 37.0002 11.9474 37.0002C13.9571 37.0002 15.6015 35.359 15.6015 33.3531C15.6015 31.3472 13.9571 29.7061 11.9474 29.7061ZM0.984985 0.529297V4.17636H4.63912L11.2166 18.0352L8.65867 22.4117C8.47596 22.9587 8.29326 23.6882 8.29326 24.2352C8.29326 26.2411 9.93762 27.8823 11.9474 27.8823H33.8722V24.2352H12.6782C12.4955 24.2352 12.3128 24.0529 12.3128 23.8705V23.6882L13.9572 20.5881H27.4775C28.9391 20.5881 30.0354 19.8587 30.5835 18.7646L37.1609 6.91166C37.5263 6.54695 37.5263 6.3646 37.5263 5.99989C37.5263 4.90577 36.7955 4.17636 35.6993 4.17636H8.65867L7.01431 0.529297H0.984985ZM30.218 29.7061C28.2083 29.7061 26.5639 31.3472 26.5639 33.3531C26.5639 35.359 28.2083 37.0002 30.218 37.0002C32.2278 37.0002 33.8722 35.359 33.8722 33.3531C33.8722 31.3472 32.2278 29.7061 30.218 29.7061Z" />
+                    </svg></a>
+            </div>
+        </header>
             <section class="cart_container">
                 <div>
                     <h2>Cart</h2>
@@ -96,24 +102,24 @@
                 </table>
                 <table class="cart_total">
                     <tr>
-                        <th class="order_total">Your Order</th>
+                        <td class="final_total">Your Order</td>
                         <td class="currency">$</td>
-                        <td class="total">120</td>
+                        <td class="order_total">120</td>
                     </tr>
                     <tr>
-                        <th class="order_total">Shipping</th>
+                        <td class="final_total">Shipping</td>
                         <td class="currency">$</td>
-                        <td class="total">10</td>
+                        <td class="order_total">10</td>
                     </tr>
                     <tr>
-                        <th class="order_total">Tax</th>
+                        <td class="final_total">Tax</td>
                         <td class="currency">$</td>
-                        <td class="total">12</td>
+                        <td class="order_total">12</td>
                     </tr>
                     <tr>
-                        <th class="order_total">Total</th>
-                        <td class="currency">$</td>
-                        <td class="total">142</td>
+                        <th class="final_total">Total</th>
+                        <th class="currency">$</th>
+                        <th class="order_total">142</th>
                     </tr>
                 </table>
             </section>
