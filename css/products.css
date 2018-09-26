@@ -1,0 +1,94 @@
+}
+/* Bleikur takkarnir stórir  */
+.btn-holder{
+    margin:0 auto;
+}
+.btn-holder .btn{
+    color: #fff;
+    padding: 10px 25px;
+    background-color: #DDBFBD;
+    border: 3px solid #DDBFBD;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-size: 24px;
+}
+.btn-holder .btn:hover{
+    background-color: white;
+    color: #DDBFBD;
+    box-shadow: none;
+}
+ /* Stillingar á vöruglugga */
+.vara {
+    padding-top: 20px;  /* Svo vörurnar klessist ekki við rammann á top */
+    border: 3px solid #DDBFBD;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.vara:hover {
+    padding-top: 16px; /* Stoppar hökt í innihaldi þegar hoverað er yfir */
+    border: 7px solid #DDBFBD;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25);
+}
+.vara-text,
+.vara-price {
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 24px;
+    text-align: center;
+    color: #000000;
+}
+.vara-price {
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+/* Bilið á milli vara og infoglugga */ 
+.other-content {
+    padding-top: 50px;
+}
+
+/* Er í einhverju veseni með að koma iconunum í vertical align middle */
+.main-footer {
+    margin-top: 90px;
+}
+/* Vörum skipt niður í flex */
+.voru-content-duo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Stillingar á myndum í ramma */
+.vara-mynd {
+    align-self: center; /* kemur í veg fyrir að myndit "strekkist" */
+    height: 300px; /* Myndir voru of stórar */
+    margin-bottom: 30px; /* Ýta takka aðeins frá verðinu */
+    outline: none;
+}
+/* Safn af vörum með verðmiða */
+.voru-content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+}
+.vara-texti {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: auto;
+    justify-content: center;
+    max-width: 1400px;
+}
+
+/* Fyrsta media query kemur þegar fyrsti vörugluggi fellur niður */
+@media (max-width:1220px) {
+    .voru-content,
+    .other-content {
+        flex-direction: column;
+    }
+}    
+
