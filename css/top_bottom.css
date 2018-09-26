@@ -1,0 +1,86 @@
+
+/* Dropshadow undir navbar */
+header {
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 60%, rgba(255,255,255,0.9), rgba(255,255,255,0.8)); /* Fade out pælingin í navbar */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 80px;
+    position: fixed; /* Set navbar í fixed position */
+    top: 0; /* Staðsett á toppnum */
+    width: 100%; /* Full width, annars fellur flexið saman*/
+}
+
+/* Navbar linkar skilgreindir */
+li a {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 37px;
+    font-size: 20px;
+    text-align: center;
+    /* textcolor noplastic */
+    color: #363636;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+li a:hover {
+    text-decoration: underline;
+    color: #ddbfbd;
+}
+
+/* Bil á milli hnappa í navbar */
+.nav-buttons {
+    margin-left: 41px
+}
+
+/* Stillingar á navbar í header */
+.cart-ico {
+    margin: 0 53px 0 22px;
+}
+
+.nav-icon {
+    height: 36px;
+}
+ /* Þetta er til að stilla staðsetningu á logo og miðjusetja alveg (lagast fyrir lokaskil) */
+.logo {
+    margin: 0 120px 0 -80px;
+    height: 65px;
+}
+
+/* Gerir header og components í navbar að að flex containers */
+header,
+.flex-nav-left,
+.flex-nav-right {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+.main-footer {
+    height: 70px;
+    background-color: #BDCECF;
+    /* margin-top: 90px; */
+    width:100%;
+    vertical-align: middle; /* Skoða hvað veldur að þetta virkar ekki */
+   
+   
+}
+.footer-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.footer-mynd {
+    height: 29px;
+    margin: 0 7px;
+}
